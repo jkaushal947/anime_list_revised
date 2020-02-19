@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Favorite Anime Characters</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+    text-align: center;
+    }
+    
+body {
+    font-family: Verdana, sans-serif;
+    background-image: url(css/anime_sky_scenery.png);
+    }
+    
+.mySlides {
+    display: none;
+        margin:auto;
+    }
+    
+    h2{
+        color: #f2f2f2;
+    }
+    
+img {
+    height: 304px;
+    width: 190px;
+    border-radius: 6px;
+    }
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  text-align: center;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+<h2>Favorite Anime Characters</h2>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 35</div>
+  <img src="images/alucard.jpg"><br>
+  <div class="text">Alucard</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 35</div>
+  <img src="images/asuka_langley.jpg"><br>
+  <div class="text">Asuka Langley</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 35</div>
+  <img src="images/duo_maxwell.jpg"><br>
+  <div class="text">Duo Maxwell</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 35</div>
+  <img src="images/edward_elric.jpg"><br>
+  <div class="text">Edward Elric</div>
+</div>
+
+    <div class="mySlides fade">
+  <div class="numbertext">5 / 35</div>
+  <img src="images/erika_sendo.jpg"><br>
+  <div class="text">Erika Sendo</div>
+</div>
+    
+    <div class="mySlides fade">
+  <div class="numbertext">6 / 35</div>
+  <img src="images/flamedramon.jpg"><br>
+  <div class="text">Flamedramon</div>
+</div>
+    
+    <div class="mySlides fade">
+  <div class="numbertext">7 / 35</div>
+  <img src="images/goku.jpg"><br>
+  <div class="text">Goku</div>
+</div>
+    
+    <div class="mySlides fade">
+  <div class="numbertext">8 / 35</div>
+  <img src="images/haruhi_suzumiya.jpg"><br>
+  <div class="text">Haruhi Suzmiya</div>
+</div>
+    
+        <div class="mySlides fade">
+  <div class="numbertext">9 / 35</div>
+  <img src="images/inuyasha.jpg"><br>
+  <div class="text">Inuyasha</div>
+</div>
+    
+        <div class="mySlides fade">
+  <div class="numbertext">10 / 35</div>
+  <img src="images/jetfire.jpg"><br>
+  <div class="text">Jetfire</div>
+</div>
+    
+            <div class="mySlides fade">
+  <div class="numbertext">11 / 35</div>
+  <img src="images/kagami_hiiragi.jpg"><br>
+  <div class="text">Kagami Hiiragi</div>
+</div>
+    
+            <div class="mySlides fade">
+  <div class="numbertext">12 / 35</div>
+  <img src="images/kakashi.jpg"><br>
+  <div class="text">Kakashi</div>
+</div>
+    
+                <div class="mySlides fade">
+  <div class="numbertext">13 / 35</div>
+  <img src="images/korrina.jpg"><br>
+  <div class="text">Korrina</div>
+</div>
+    
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+<span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span>
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html> 
